@@ -1,0 +1,123 @@
+.page-shell {
+  padding: 80px 20px 100px;
+  min-height: calc(100vh - 140px);
+  background: var(--primary-bg);
+}
+
+.page-hero {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.page-copy {
+  max-width: 620px;
+}
+
+.page-label {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(212, 175, 55, 0.14);
+  color: var(--accent-gold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.page-hero h1 {
+  font-size: 54px;
+  margin-bottom: 24px;
+  line-height: 1.05;
+}
+
+.page-hero p {
+  color: var(--text-secondary);
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.page-hero-card {
+  padding: 32px;
+  background: white;
+  border-radius: 28px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
+}
+
+.page-hero-card h2 {
+  margin-top: 18px;
+  margin-bottom: 14px;
+  font-size: 24px;
+}
+
+.page-hero-card p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.page-hero-card svg {
+  color: var(--accent-orange);
+  margin-bottom: 18px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 28px;
+  border: 1px solid var(--border-color);
+  padding: 28px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.profile-icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 22px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 140, 66, 0.14);
+  color: var(--accent-orange);
+}
+
+.profile-card h3 {
+  font-size: 22px;
+}
+
+.profile-card p {
+  color: var(--accent-gold);
+  font-weight: 700;
+}
+
+.profile-card span {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 1024px) {
+  .page-hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-shell {
+    padding: 60px 16px 80px;
+  }
+
+  .page-hero h1 {
+    font-size: 40px;
+  }
+}

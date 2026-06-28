@@ -1,0 +1,287 @@
+.service-detail {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: var(--primary-bg);
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border: 1px solid var(--border-color);
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: var(--accent-orange);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 32px;
+}
+
+.back-button:hover {
+  background: var(--primary-bg);
+  border-color: var(--accent-orange);
+}
+
+.service-header {
+  margin-bottom: 48px;
+}
+
+.service-header h1 {
+  font-size: 42px;
+  color: var(--dark-text);
+  margin-bottom: 12px;
+}
+
+.service-breadcrumb {
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+.service-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 64px;
+}
+
+.service-description h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: var(--dark-text);
+}
+
+.service-description > p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 32px;
+  font-size: 16px;
+}
+
+.benefits-section {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.benefits-section h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.benefits-list {
+  list-style: none;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+}
+
+.check-icon {
+  color: var(--accent-orange);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+/* Pricing Section */
+.pricing-section h2 {
+  font-size: 24px;
+  margin-bottom: 32px;
+  color: var(--dark-text);
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.pricing-card {
+  background: white;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.pricing-card:hover {
+  border-color: var(--accent-orange);
+  box-shadow: 0 8px 24px rgba(255, 140, 66, 0.1);
+}
+
+.pricing-card.selected {
+  border-color: var(--accent-orange);
+  background: linear-gradient(135deg, rgba(255, 140, 66, 0.05), rgba(246, 213, 138, 0.05));
+  box-shadow: 0 8px 24px rgba(255, 140, 66, 0.15);
+}
+
+.pricing-card h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: var(--dark-text);
+}
+
+.price {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.currency {
+  font-size: 20px;
+  color: var(--accent-orange);
+}
+
+.amount {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--accent-orange);
+}
+
+.price-note {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.features-list {
+  list-style: none;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.features-list svg {
+  color: var(--accent-orange);
+  flex-shrink: 0;
+}
+
+.btn-select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--border-color);
+  background: white;
+  color: var(--dark-text);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-select:hover {
+  border-color: var(--accent-orange);
+  color: var(--accent-orange);
+}
+
+.btn-select.active {
+  background: var(--accent-orange);
+  border-color: var(--accent-orange);
+  color: white;
+}
+
+.btn-checkout {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  margin-top: 24px;
+}
+
+/* Testimonials */
+.testimonials-section {
+  margin-top: 64px;
+}
+
+.testimonials-section h2 {
+  font-size: 28px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+  color: var(--accent-gold);
+}
+
+.testimonial-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.author {
+  font-weight: 600;
+  color: var(--dark-text) !important;
+}
+
+.service-not-found {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.service-not-found h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 1024px) {
+  .service-content {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-header h1 {
+    font-size: 28px;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}

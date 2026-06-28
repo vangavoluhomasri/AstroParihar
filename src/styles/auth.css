@@ -1,0 +1,192 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-box {
+  background: white;
+  border-radius: 16px;
+  padding: 48px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth-header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: var(--dark-text);
+}
+
+.auth-header p {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.step-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.step {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  background: var(--primary-bg);
+  color: var(--text-secondary);
+  transition: all 0.3s;
+}
+
+.step.active {
+  background: linear-gradient(135deg, var(--accent-orange), var(--accent-gold));
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.3);
+}
+
+.step-line {
+  width: 24px;
+  height: 2px;
+  background: var(--border-color);
+}
+
+.auth-form {
+  margin-bottom: 24px;
+}
+
+.error-message {
+  background: #FEE;
+  color: var(--error);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  border-left: 4px solid var(--error);
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.remember-me input {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.forgot-link {
+  color: var(--accent-orange);
+  font-weight: 500;
+}
+
+.full-width {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.form-buttons .btn-primary,
+.form-buttons .btn-secondary {
+  flex: 1;
+  margin-top: 0;
+}
+
+.auth-footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid var(--border-color);
+  font-size: 14px;
+}
+
+.auth-footer p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.auth-link {
+  font-weight: 600;
+  color: var(--accent-orange);
+}
+
+.social-login {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.social-login p {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-btn {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  background: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: var(--dark-text);
+}
+
+.social-btn:hover {
+  border-color: var(--accent-orange);
+  color: var(--accent-orange);
+}
+
+@media (max-width: 480px) {
+  .auth-box {
+    padding: 32px 20px;
+  }
+
+  .auth-header h1 {
+    font-size: 22px;
+  }
+
+  .form-options {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}

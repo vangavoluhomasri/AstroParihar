@@ -1,0 +1,38 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="ringGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F7D28A" />
+      <stop offset="100%" stop-color="#D45F1A" />
+    </radialGradient>
+    <radialGradient id="centerGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF3D8" />
+      <stop offset="100%" stop-color="#F2B34A" />
+    </radialGradient>
+  </defs>
+  <circle cx="120" cy="120" r="114" fill="url(#ringGrad)" />
+  <circle cx="120" cy="120" r="96" fill="#7B1D00" />
+  <circle cx="120" cy="120" r="78" fill="url(#centerGrad)" />
+  <g opacity="0.95">
+    <path d="M103 74c-2 6-2 12 0 18s7 10 14 10 12-5 15-11 1-14-4-19c-5-6-14-7-20-2-5 4-8 11-5 16z" fill="#B34A02" />
+    <path d="M117 92c-2 5-2 10 0 14s6 7 10 6 7-6 8-11 0-11-3-15c-4-4-10-4-15-2z" fill="#A23C00" />
+    <path d="M97 98c-.5 3 0 6 1 9a18 18 0 0 0 13 11 13 13 0 0 0 10-2c3-2 4-6 3-9a18 18 0 0 0-6-9c-4-2-9-1-13 1z" fill="#E3A66A" />
+    <path fill="#B34A02" d="M120 112c2 1 3 3 2 5-1 2-4 2-5 0s-1-4 1-5z" />
+  </g>
+  <g fill="#FFC55C">
+    <circle cx="120" cy="84" r="6" />
+    <circle cx="120" cy="156" r="6" />
+    <circle cx="84" cy="120" r="6" />
+    <circle cx="156" cy="120" r="6" />
+  </g>
+  <g stroke="#FFC55C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M120 72l0 24" />
+    <path d="M120 144l0 24" />
+    <path d="M72 120l24 0" />
+    <path d="M144 120l24 0" />
+  </g>
+  <g transform="translate(120 120)">
+    <circle cx="0" cy="0" r="18" fill="#B34A02" />
+    <circle cx="0" cy="0" r="10" fill="#F9E0B6" />
+  </g>
+  <circle cx="120" cy="120" r="114" stroke="#F8BB37" stroke-width="10" />
+</svg>
